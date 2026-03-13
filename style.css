@@ -74,6 +74,11 @@ body {
     opacity: 0.4;
 }
 
+.hero-buttons button:enabled:hover {
+    transform: translateY(-4px);
+    opacity: 1;
+}
+
 .section-title {
     display: block;
     margin: 2rem auto -3rem auto;
@@ -208,4 +213,125 @@ h1 {
 .hobby:last-child ul {
     align-self: stretch; 
     padding-left: 10px; 
+}
+
+.inspirations-content {
+    margin-top: -8rem;
+    display: grid;
+    grid-template-columns: repeat(2, 630px);
+    justify-content: center;
+    gap: 25px;
+}
+
+.inspiration {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 2rem;
+    border: 10px solid white;
+    background: black;
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.inspiration-image {
+    width: 400px;
+    flex-shrink: 0;
+}
+
+.inspiration:nth-child(4n+1),
+.inspiration:nth-child(4n+2) {
+    transform: translateX(40px);
+}
+
+.inspiration:nth-child(4n+3),
+.inspiration:nth-child(4n+4) {
+    transform: translateX(-40px);
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 1rem;
+}
+
+.Icon {
+    background: none;
+    border: 6px none;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.15s ease, background 0.15s ease;
+    margin-top: 4rem;
+}
+
+.icon{
+        width: 80px;
+    height: 80px;
+}
+
+.Icon:hover {
+    transform: translateY(-4px);
+    filter: invert(10%) sepia(32%) saturate(6300%) hue-rotate(190deg) brightness(90%);
+}
+
+.download-font {
+    text-align: center;
+    font-family: Karim;
+    font-size: 5rem;
+    margin-bottom: 4rem;
+    margin-top: 6rem;
+}
+
+.font-link {
+    color: #92A0FB;
+}
+
+.footer {
+    display: flex;
+    margin-top: 4rem;
+    align-items: center;
+    justify-content: center;
+    font-family: Karim;
+    font-size: 2rem;
+    flex-direction: row;
+    width: 32rem;
+    margin: 4rem auto 0rem auto;
+}
+
+.repo-link {
+    text-decoration: none;
+}
+
+.repo-link:hover {
+    text-decoration: underline;
+}
+
+.Signature {
+    width: 180px;
+    display: block;
+    margin: 10px auto;
+}
+
+button:has(.button-centered) {
+    display: block;
+    margin: 2rem auto 2rem auto;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.button-centered {
+    width: 176px;
+    height: auto;
+    image-rendering: pixelated;
+    display: block;
+}
+
+.button-centered:active {
+    transform: scale(0.95) translateY(2px);
 }
