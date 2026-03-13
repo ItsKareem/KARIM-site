@@ -10,7 +10,39 @@
     src: url('./fonts/Karim-Regular.ttf');
 }
 
+.hero {
+    background-image: url('images/hero_background.webp');
+    background-color: black;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: bottom center;
+    overflow: hidden
+}
+
+.projects {
+    background-image: url('images/projects_background.webp');
+    background-color: black;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: bottom center;
+    overflow: hidden
+}
+
+.blogs {
+    background-image: url('images/blogs_background.webp');
+    background-color: black;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: bottom center;
+    overflow: hidden
+}
+
 body {
+    margin: 0;
+    padding: 0;
     background-color: black;
 }
 
