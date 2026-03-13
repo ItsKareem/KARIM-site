@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Karim';
+  src: url('fonts\Karim-Regular.ttf');
+}
+
 body {
     background-color: black;
 }
@@ -12,6 +17,8 @@ body {
 .hero-bg {
     position: relative;
     min-height: 100vh;
+    flex-direction: column;
+    align-items: stretch;
     overflow: hidden;
 }
 
@@ -21,30 +28,184 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
+    border: none;
     z-index: 0;
 }
 
 .hero-content {
+    font-family: Karim;
     position: relative;
     z-index: 1;
 }
 
 .hero-text {
-    font-size: 3rem;
-    margin-top: 6rem;
-    margin-left: 15rem;
-    margin-bottom: -2rem;
+    font-size: 7rem;
+    margin-top: 5rem;
+    margin-left: 25rem;
+    margin-bottom: -4rem;
 }
 
 .hero-logo {
     display: block;
     margin: 0 auto;
-    width: 55%;
+    width: 50%;
 }
 
 .hero-buttons {
     display: flex;
     justify-content: center;
+    gap: 5rem;
+}
+
+.hero-buttons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
+    background: none;
+}
+
+.hero-buttons button:disabled {
+    opacity: 1;
+}
+
+.hero-buttons button:enabled {
+    opacity: 0.4;
+}
+
+.section-title {
+    display: block;
+    margin: 2rem auto -3rem auto;
+    text-align: center;
+}
+
+.anonymous-pro-bold {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.about-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 10px solid white;
+    background: black;
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.dialogue {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.character {
+    color: #92A0FB;
+    min-width: 80px;
+}
+
+.about-text {
+    margin-bottom: 1rem;
+}
+
+.fun-fact-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.rab-bot {
+    width: 200px;
+}
+
+.fact-box {
+    flex: 1;
+    padding: 1rem;
+    margin: 4rem auto 2rem auto;
+    border: 5px solid white;
+    background: black;
+}
+
+h1 {
+    font-family: Karim;
+    text-align: center;
+}
+
+.hobbies {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+    gap: 2px;
+}
+
+.hobby {
+    flex: 1;
+    max-width: 350px;
+    margin: 1rem;
+    padding: 1rem;
+    border: 10px solid white;
+    background: black;
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 700;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hobby:last-child{
+    text-align: left;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style-position:inside;
+    font-size: 2rem;
+}
+
+.hobby ul {
+    list-style: none; 
+    padding: 0;
+    margin: 10px 0;
+    text-align: left; 
+}
+
+.hobby li {
+    display: flex;             
+    align-items: flex-start;   
+    margin-bottom: 8px;
+    font-size: 1.7rem;
+}
+
+.hobby li::before {
+    content: "•";              
+    color: #FFCC40;            
+    margin-right: 12px;        
+    flex-shrink: 0;
+    font-weight: bold;
+}
+
+.hobby:last-child h1 {
+    align-self: center;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.star-rab-bot {
+    align-self: flex-end; 
+    margin-top: -70px;
+    width: 250px;
+    height: auto;
+}
+
+.hobby:last-child ul {
+    align-self: stretch; 
+    padding-left: 10px; 
 }
