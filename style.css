@@ -5,12 +5,9 @@
     box-sizing: border-box;
 }
 
-
-
 @font-face {
-  font-family: 'Karim';
-  src: url('./fonts/Karim-Regular.ttf');
-
+    font-family: 'Karim';
+    src: url('./fonts/Karim-Regular.ttf');
 }
 
 body {
@@ -89,12 +86,12 @@ body {
 }
 
 .anonymous-pro-bold {
-  font-family: "Anonymous Pro", monospace;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 700;
+    font-style: normal;
 }
 
-.about-content {
+.about-box{
     max-width: 1000px;
     margin: 0 auto;
     padding: 2rem;
@@ -169,32 +166,32 @@ h1 {
     text-align: center;
 }
 
-.hobby:last-child{
+.hobby:last-child {
     text-align: left;
     flex-direction: column;
     align-items: flex-start;
-    list-style-position:inside;
+    list-style-position: inside;
     font-size: 2rem;
 }
 
 .hobby ul {
-    list-style: none; 
+    list-style: none;
     padding: 0;
     margin: 10px 0;
-    text-align: left; 
+    text-align: left;
 }
 
 .hobby li {
-    display: flex;             
-    align-items: flex-start;   
+    display: flex;
+    align-items: flex-start;
     margin-bottom: 8px;
     font-size: 1.7rem;
 }
 
 .hobby li::before {
-    content: "•";              
-    color: #FFCC40;            
-    margin-right: 12px;        
+    content: "•";
+    color: #FFCC40;
+    margin-right: 12px;
     flex-shrink: 0;
     font-weight: bold;
 }
@@ -207,15 +204,15 @@ h1 {
 }
 
 .star-rab-bot {
-    align-self: flex-end; 
+    align-self: flex-end;
     margin-top: -70px;
     width: 250px;
     height: auto;
 }
 
 .hobby:last-child ul {
-    align-self: stretch; 
-    padding-left: 10px; 
+    align-self: stretch;
+    padding-left: 10px;
 }
 
 .inspirations-content {
@@ -271,8 +268,8 @@ h1 {
     margin-top: 4rem;
 }
 
-.icon{
-        width: 80px;
+.icon {
+    width: 80px;
     height: 80px;
 }
 
