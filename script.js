@@ -26,8 +26,8 @@ rabbotButton.addEventListener('click', () => {
     const chosenFact = availableFacts.splice(randomIndex, 1);
 
     factDisplay.innerText = chosenFact;
-    rabbotButton.src = "images/Rab-bot-pressed.webp";
+    rabbotButton.src = "images/rab-bot-pressed.webp";
 
-    setTimeout(() => { rabbotButton.src = "images/Rab-bot.webp"; }, 500);
+    setTimeout(() => { rabbotButton.src = "images/rab-bot.webp"; }, 500);
 
 });
