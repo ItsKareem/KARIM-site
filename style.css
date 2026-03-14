@@ -74,26 +74,28 @@ body {
     justify-content: space-around;
     font-family: Karim;
     gap: 0;
+    overflow: visible; 
 }
 
 .hero-text {
     width: 66vw;
-    font-size: 10vw;
-    font-size: 10dvw;
+    font-size: clamp(3rem, 10vw, 8rem);
     margin: 0;
+    text-align: center;
 }
 
 .hero-logo {
-    min-width: 300px;
+    min-width: 250px;
     width: 50vw;
-    width: 50dvw;
+    height: auto;
 }
-
 
 .hero-buttons {
     display: flex;
     justify-content: center;
-    gap: 3vw
+    gap: 3vw;
+    position: relative;
+    z-index: 10;
 }
 
 .hero-buttons button {
@@ -102,12 +104,12 @@ body {
     align-items: center;
     border: none;
     background: none;
+    cursor: pointer;
+    padding: 0;
 }
 
 .hero-buttons img {
-    width: 10vw;
-    width: 10dvw;
-    min-width: 90px;
+    width: clamp(80px, 10vw, 150px);
     height: auto;
 }
 
