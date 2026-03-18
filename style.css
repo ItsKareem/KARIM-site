@@ -133,11 +133,16 @@ body {
 .section-title {
     display: block;
     margin: 3rem auto 3rem auto;
-    max-width: 80%;
-    max-height: 20vh; 
+    max-width: 80%; 
     object-fit: contain;
     width: auto; 
-    height: auto;
+    height: 30vh;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        height: 20vh;
+    }
 }
 
 .anonymous-pro-bold {
@@ -223,6 +228,11 @@ h1 {
     gap: 2vw;
 }
 
+.hobby-image {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
 .hobby {
     flex: 1;
     min-width: 280px;
@@ -276,15 +286,14 @@ h1 {
 }
 
 .star-rab-bot {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
     align-self: flex-end;
-    margin-top: -15%;
-    width: 40%;
-    max-width: 250px;
+    width: 80%;
     height: auto;
 }
 
 .inspirations-content {
-    margin-top: -4rem;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 630px)); 
     justify-content: center;
@@ -312,6 +321,8 @@ h1 {
     width: 45%;
     height: auto;
     flex-shrink: 0;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
 }
 
 @media (max-width: 1399px) {
@@ -348,8 +359,7 @@ h1 {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    gap: clamp(20px,2vw,2vw); 
-    margin-top: 2vw;
+    gap: clamp(20px,2vw,2vw);
 }
 
 .Icon {
