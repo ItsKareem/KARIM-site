@@ -499,7 +499,7 @@ button:has(.button-centered) {
     width: 100%;
     height: auto;
     display: block;
-    border: 8px solid white;
+    border: 0.4vw solid white;
     transition: transform 0.3s ease;
 }
 
@@ -528,10 +528,33 @@ button:has(.button-centered) {
     width: 100%;
     height: auto;
     display: block;
-    border: 8px solid white;
+    border: 0.4vw solid white;
 }
 
 .website-card:hover {
   transform: translateY(-10px) scale(1.05);
   box-shadow: 0 0 15px #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    .games-carousel, 
+    .websites-carousel {
+        display: block;
+        height: auto;
+        overflow: visible;
+    }
+
+    .games-group, 
+    .websites-group {
+        flex-direction: column;
+        width: 100%;
+        animation: none;
+        gap: 40px;
+        padding: 20px 0;
+    }
+
+    .game-card, 
+    .website-card {
+        width: 85vw;
+    }
 }
