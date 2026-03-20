@@ -162,6 +162,10 @@ body {
     font-size: clamp(1rem, 2.5vw, 1.8rem);
 }
 
+.about-box:hover {
+  box-shadow: 0 0 15px #FFFFFF;
+}
+
 .dialogue {
     display: flex;
     flex-wrap: wrap;
@@ -285,6 +289,11 @@ h1 {
     flex-shrink: 0;
 }
 
+.hobby:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 0 15px #FFFFFF;
+}
+
 .star-rab-bot {
     image-rendering: pixelated;
     image-rendering: crisp-edges;
@@ -315,6 +324,10 @@ h1 {
     font-family: "Anonymous Pro", monospace;
     font-weight: 700;
     font-size: clamp(0.8rem, 2vw, 1.8rem);
+}
+
+.inspiration:hover {
+  box-shadow: 0 0 15px #FFFFFF;
 }
 
 .inspiration-image {
@@ -383,7 +396,14 @@ h1 {
 }
 .Icon:hover {
     transform: translateY(-4px);
+}
+
+.hero-icon:hover {
     filter: invert(10%) sepia(32%) saturate(6300%) hue-rotate(190deg) brightness(90%);
+}
+
+.projects-icon:hover {
+    filter: invert(16%) sepia(36%) saturate(7300%) hue-rotate(300deg) brightness(85%) contrast(95%);
 }
 
 .download-font {
@@ -395,10 +415,17 @@ h1 {
     margin-bottom: clamp(1rem, 5vh, 4rem);
     padding: 0 2vw;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
-.font-link {
+.font-link-hero {
     color: #92A0FB;
+    text-decoration: underline;
+}
+
+.font-link-projects {
+    color: #CE5C86;
+    text-decoration: underline;
 }
 
 .footer {
@@ -409,6 +436,7 @@ h1 {
     white-space: nowrap;
     font-family: Karim;
     font-size: clamp(0.8rem, 6vw, 2.5rem);
+    text-decoration: none;
     width: 90vw;
     max-width: 1000px;
     margin: 4rem auto 2rem auto;
@@ -452,4 +480,58 @@ button:has(.button-centered) {
 
 .button-centered:active {
     transform: scale(0.95) translateY(2px);
+}
+
+.games-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.game-card {
+    width: 30vw;
+    flex: 0 0 auto;
+}
+
+.game-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 8px solid white;
+    transition: transform 0.3s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 0 15px #FFFFFF;
+}
+
+.websites-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.website-card {
+    width: 40vw;
+    flex: 0 0 auto;
+    text-align: center;
+    align-content: center
+}
+
+.website-card img {
+    overflow: visible;
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 8px solid white;
+}
+
+.website-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 0 15px #FFFFFF;
 }
